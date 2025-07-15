@@ -50,15 +50,6 @@ npm install
 npm run dev
 ```
 
-4. Open your browser and visit `http://localhost:5173`
-
-## 📝 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
-- `npm run lint` - Run ESLint for code quality checks
-
 ## 📁 Project Structure
 
 ```
@@ -115,14 +106,6 @@ The landing page is fully responsive and optimized for:
 - Tablets (768px+)
 - Desktop (1024px+)
 - Large screens (1440px+)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📄 License
 
