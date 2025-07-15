@@ -1,70 +1,137 @@
-# React + TypeScript + Vite
+# 👻 Boo Coin Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for Boo Coin - a spooky meme cryptocurrency that brings together community, nostalgia, and blockchain innovation.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Hero Section** - Eye-catching introduction with animated elements
+- **About Boo** - Comprehensive information about the Boo Coin project
+- **Interactive Stats** - Real-time tokenomics and community metrics
+- **Story Time** - Engaging narrative about Boo Coin's origin and mission
+- **Memory Section** - Community-driven content and experiences
+- **Legacy Section** - Long-term vision and roadmap
+- **Responsive Design** - Optimized for all devices and screen sizes
+- **Modern UI** - Beautiful animations and micro-interactions
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React 18** - Modern React with hooks and functional components
+- **TypeScript** - Type-safe development with full IntelliSense
+- **Vite** - Lightning-fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework for rapid styling
+- **shadcn/ui** - High-quality, accessible UI components
+- **Lucide React** - Beautiful, customizable icons
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd Boo-Coin
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open your browser and visit `http://localhost:5173`
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint for code quality checks
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── sections/          # Page sections (Hero, About, Stats, etc.)
+│   └── ui/               # Reusable UI components
+├── config/               # App configuration
+├── hooks/               # Custom React hooks
+├── lib/                 # Utility functions
+└── assets/              # Static assets
+```
+
+## 🎨 Customization
+
+The project uses a modular component structure making it easy to:
+
+- Modify existing sections in `src/components/sections/`
+- Add new UI components in `src/components/ui/`
+- Update styling with Tailwind CSS classes
+- Configure app settings in `src/config/app.config.ts`
+
+## 🔧 Development
+
+### ESLint Configuration
+
+For production applications, consider enabling type-aware lint rules:
 
 ```js
 export default tseslint.config([
-  globalIgnores(['dist']),
+  globalIgnores(["dist"]),
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ["**/*.{ts,tsx}"],
     extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
       ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
       ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
       ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
     ],
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
         tsconfigRootDir: import.meta.dirname,
       },
-      // other options...
     },
   },
-])
+]);
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📱 Responsive Design
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The landing page is fully responsive and optimized for:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# BOO-MEME-COIN-LANDING-PAGE
+- Mobile devices (320px+)
+- Tablets (768px+)
+- Desktop (1024px+)
+- Large screens (1440px+)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🎃 About Boo Coin
+
+Boo Coin is more than just a meme cryptocurrency - it's a community-driven project that celebrates the spooky, fun side of blockchain technology while building real utility and value for holders.
+
+---
+
+Built with 💜 for the Boo Coin community
