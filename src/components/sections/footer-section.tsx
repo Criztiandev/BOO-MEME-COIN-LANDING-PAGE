@@ -1,16 +1,8 @@
-import {
-  Heart,
-  Star,
-  Share2,
-  Instagram,
-  Facebook,
-  Twitter,
-} from "lucide-react";
+import { Heart, Star, Instagram, Facebook, Twitter } from "lucide-react";
 import { KawaiiButton } from "../ui/kawaii-button";
 import APP_CONFIG from "@/config/app.config";
 
 export const FooterSection = () => {
-  const shareLink = `https://t.me/share/url?url=${APP_CONFIG.websiteLink}`;
   return (
     <footer id="tribute" className="bg-gradient-hero relative overflow-hidden">
       {/* Main Footer Content */}

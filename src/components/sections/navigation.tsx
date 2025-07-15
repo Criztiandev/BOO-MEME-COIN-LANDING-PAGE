@@ -1,4 +1,4 @@
-import { Heart, Share2, Instagram, Twitter } from "lucide-react";
+import { Heart, Share2 } from "lucide-react";
 import { KawaiiButton } from "@/components/ui/kawaii-button";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";

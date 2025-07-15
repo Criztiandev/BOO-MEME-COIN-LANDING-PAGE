@@ -1,4 +1,4 @@
-import { Heart, Users, Star, Camera } from "lucide-react";
+import { Heart, Star, Camera } from "lucide-react";
 
 const stats = [
   {

@@ -1,4 +1,4 @@
-import { Calendar, Camera, Book, Heart, Star } from "lucide-react";
+import { Camera, Book, Heart, Star } from "lucide-react";
 
 const timelineEvents = [
   {
