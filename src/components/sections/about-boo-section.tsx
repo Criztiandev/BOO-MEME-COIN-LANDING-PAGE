@@ -26,7 +26,7 @@ export const AboutBooSection = () => {
               <div className="relative group">
                 <div className="character-frame aspect-square bg-gradient-pink/20 backdrop-blur-sm p-6 flex items-center justify-center overflow-hidden">
                   <div className="text-center">
-                    <div className="text-8xl md:text-9xl mb-4">🐕</div>
+                    <div className="text-8xl md:text-9xl mb-4"></div>
                     <div className="absolute inset-4 border-4 border-primary/30  opacity-50"></div>
                     <div className="absolute top-8 right-8">
                       <Heart className="w-8 h-8 text-primary fill-current float-gentle" />
@@ -36,11 +36,11 @@ export const AboutBooSection = () => {
                     </div>
                   </div>
                   {/* Image placeholder - you can replace with actual Boo image */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10  m-4 flex items-center justify-center">
-                    <span className="text-primary/40 font-fredoka font-bold text-lg">
-                      Image Here
-                    </span>
-                  </div>
+                  <img
+                    src={"/images/about-image-1.jpg"}
+                    alt="Boo with sunglasses"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -48,9 +48,11 @@ export const AboutBooSection = () => {
               <div className="relative group">
                 <div className="character-frame aspect-square bg-gradient-pink/20 backdrop-blur-sm p-6 flex items-center justify-center overflow-hidden border">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10  m-4 flex items-center justify-center">
-                    <span className="text-primary/40 font-fredoka font-bold text-lg">
-                      Image Here
-                    </span>
+                    <img
+                      src={"/images/about-image-2.jpg"}
+                      alt="Boo with sunglasses"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>

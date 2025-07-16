@@ -53,15 +53,15 @@ export const FooterSection = () => {
 
         {/* Social Media Links */}
         <div className="flex justify-center space-x-6 mb-16">
-          <div className="w-16 h-16 bg-card border-4 border-black rounded-full flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
-            <Facebook className="w-8 h-8 text-primary" />
-          </div>
-          <div className="w-16 h-16 bg-card border-4 border-black rounded-full flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
-            <Instagram className="w-8 h-8 text-secondary" />
-          </div>
-          <div className="w-16 h-16 bg-card border-4 border-black rounded-full flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
-            <Twitter className="w-8 h-8 text-accent" />
-          </div>
+          <a
+            href={APP_CONFIG.twitterLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="w-16 h-16 bg-card border-4 border-black rounded-full flex items-center justify-center hover:scale-110 transition-transform cursor-pointer">
+              <Twitter className="w-8 h-8 text-blue-500" />
+            </div>
+          </a>
         </div>
 
         {/* Memorial Quote */}

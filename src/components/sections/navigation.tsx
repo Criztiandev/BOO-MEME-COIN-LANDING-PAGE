@@ -3,10 +3,11 @@ import { KawaiiButton } from "@/components/ui/kawaii-button";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import APP_CONFIG from "@/config/app.config";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export const Navigation = () => {
-  // check the current position of the scroll
   const [scrollPosition, setScrollPosition] = useState(0);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +36,7 @@ export const Navigation = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden xl:flex items-center space-x-8  ">
             <a
               href="#story"
               className="relative font-fredoka font-semibold text-foreground transition-all duration-300 group overflow-hidden py-2 px-4 rounded-lg"
@@ -75,14 +76,18 @@ export const Navigation = () => {
           </div>
 
           {/* CTA Button */}
-          <KawaiiButton
-            variant="primary"
-            size="sm"
-            onClick={() => window.open(APP_CONFIG.telegramLink, "_blank")}
-          >
-            <Share2 className="w-4 h-4 mr-2" />
-            Join us in Telegram
-          </KawaiiButton>
+          {!isMobile && (
+            <div className="hidden md:block">
+              <KawaiiButton
+                variant="primary"
+                size="sm"
+                onClick={() => window.open(APP_CONFIG.telegramLink, "_blank")}
+              >
+                <Share2 className="w-4 h-4 mr-2" />
+                <span className="text-sm lg:text-lg">Join us</span>
+              </KawaiiButton>
+            </div>
+          )}
         </div>
       </div>
     </nav>

@@ -63,7 +63,7 @@ export const LegacySection = () => {
               className="card-kawaii group"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="flex items-start space-x-6">
+              <div className="flex items-start  space-y-6 md:space-x-6 flex-col md:flex-row ">
                 <div
                   className={`w-16 h-16 ${item.color} rounded-full border-4 border-black flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform`}
                 >
@@ -82,7 +82,7 @@ export const LegacySection = () => {
                         className="flex items-center space-x-3"
                       >
                         <Sparkles className="w-4 h-4 text-primary flex-shrink-0" />
-                        <span className="font-inter text-muted-foreground">
+                        <span className="font-inter text-muted-foreground break-words">
                           {listItem}
                         </span>
                       </li>

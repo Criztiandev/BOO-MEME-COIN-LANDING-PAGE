@@ -45,14 +45,14 @@ export const HeroSection = () => {
         {/* Main Content */}
         <div className="text-center mb-16 bounce-in">
           {/* Main Headline */}
-          <h1 className="text-6xl md:!text-8xl font-fredoka font-bold  text-stroke mb-6 text-foreground">
+          <h1 className=" !text-[52px] md:!text-8xl font-fredoka font-bold  text-stroke mb-6 text-foreground">
             THE WORLD'S
             <br />
             <span className="">CUTEST DOG</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-2xl md:!text-3xl font-fredoka font-semibold  mb-8 max-w-4xl mx-auto text-black">
+          <p className="!text-xl md:!text-3xl font-fredoka font-semibold  mb-8 max-w-4xl mx-auto text-black">
             Boo - The Pomeranian Who Captured 17 Million Hearts
           </p>
 
@@ -82,14 +82,14 @@ export const HeroSection = () => {
         <div className="flex justify-between items-center relative">
           {/* Left Character */}
           <div
-            className="absolute left-8 md:left-20 top-0 bounce-in"
+            className="absolute left-8 md:left-20 top-0   lg:-top-24  bounce-in"
             style={{ animationDelay: "1s" }}
           >
-            <div className="character-frame w-32 md:w-48 lg:w-64 h-32 md:h-48 lg:h-64 bg-card p-4 rounded-full">
+            <div className="character-frame w-32 md:w-42 lg:w-64 xl:w-64 h-32 md:h-42 lg:h-64 xl:h-64 bg-card rounded-full overflow-hidden">
               <img
-                src={"#"}
+                src={"/images/hero-image-1.jpg"}
                 alt="Boo with sunglasses"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
             {/* Floating speech bubble */}
@@ -102,14 +102,14 @@ export const HeroSection = () => {
 
           {/* Right Character */}
           <div
-            className="absolute right-8 md:right-20 top-0 bounce-in"
+            className="absolute right-8 md:right-20 lg:right-20 xl:right-20 top-0 lg:-top-24 bounce-in "
             style={{ animationDelay: "1.5s" }}
           >
-            <div className="character-frame w-32 md:w-48 lg:w-64 h-32 md:h-48 lg:h-64 bg-card p-4 rounded-full">
+            <div className="character-frame w-32 md:w-42 lg:w-64 xl:w-64 h-32 md:h-42 lg:h-64 xl:h-64 bg-card rounded-full overflow-hidden">
               <img
-                src="#"
+                src={"/images/logo.jpg"}
                 alt="Happy Boo"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
             {/* Floating hearts */}

@@ -77,22 +77,6 @@ export const MemoryWall = () => {
             </div>
           ))}
         </div>
-
-        {/* Add Memory CTA */}
-        <div className="mt-16 text-center">
-          <div className="card-kawaii bg-card/80 backdrop-blur-sm max-w-md mx-auto">
-            <Heart className="w-12 h-12 text-primary fill-current mx-auto mb-4" />
-            <h3 className="text-2xl font-fredoka font-bold text-foreground mb-3">
-              Join Our Community
-            </h3>
-            <p className="text-muted-foreground font-inter mb-6">
-              Share your BOO experience and connect with fellow holders.
-            </p>
-            <button className="btn-kawaii btn-primary w-full cursor-pointer">
-              Join Telegram
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );

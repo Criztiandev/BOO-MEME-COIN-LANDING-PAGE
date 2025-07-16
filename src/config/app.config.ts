@@ -7,10 +7,8 @@ const APP_CONFIG = {
   initialPrice: 0.000000000000000001,
   initialLiquidity: 1000000000000,
   contractAddress: "0x...",
-  telegramLink: "https://t.me/boo_token",
-  twitterLink: "https://x.com/boo_token",
-  discordLink: "https://discord.gg/boo_token",
-  websiteLink: "https://boo.com",
+  telegramLink: "https://t.me/boothedogeth",
+  twitterLink: "https://x.com/boothedogeth",
 
   env: "TESTNET",
 };
