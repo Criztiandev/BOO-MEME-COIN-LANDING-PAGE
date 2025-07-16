@@ -1,4 +1,4 @@
-import { Heart, Star, Instagram, Facebook, Twitter } from "lucide-react";
+import { Heart, Star, Twitter } from "lucide-react";
 import { KawaiiButton } from "../ui/kawaii-button";
 import APP_CONFIG from "@/config/app.config";
 
